@@ -19,6 +19,7 @@ int main(){
         printf("Unable to delete file '%s'\n", File);
     }
     }else{
+        printf("File didn't removed as you didn't press 'y' key!!!\n");
         exit(0);
     }
     return 0;
