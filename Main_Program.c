@@ -204,15 +204,9 @@ void execution() {
         }else if(!strcmp("exit",Command)){
             exit(0);
 
-        }else if(!strcmp("echo",Command)){
-            char Cmd[100];
-            printf("Enter a text to echo it: ");        
-            scanf("%[^\n]%*c", Cmd);
-            char str[100];
-            strcat(Command," ");
-            strcpy(str,strcat(Command,Cmd));
-            system(str);
-            
+        }else if((Command[0]=='e')&&(Command[1]=='c')&&(Command[2]=='h')&&(Command[3]=='o')&&(Command[4]==' ')){
+            system(Command);
+
         }else if(!strcmp("echo *",Command)){
             system("ls");
             
