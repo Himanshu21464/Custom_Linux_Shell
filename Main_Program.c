@@ -203,7 +203,7 @@ void execution() {
 
         }else if(!strcmp("exit",Command)){
             exit(0);
-
+        
         }else if((Command[0]=='e')&&(Command[1]=='c')&&(Command[2]=='h')&&(Command[3]=='o')&&(Command[4]==' ')){
             system(Command);
 
@@ -254,8 +254,8 @@ void execution() {
         }else if(!strcmp("rm",Command)){
             remove_();
 
-        }else if(!strcmp("rm -i",Command)){
-            remove_i();
+        }else if(!strcmp("rm -i",Command)){ 
+            remove_i();                      
             
     
         }else if(!strcmp("mkdir &t",Command)){
